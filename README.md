@@ -1,46 +1,56 @@
 # PointIQ Core
 
-PointIQ Core is a Chrome extension (built with WXT + React) for credit card recommendations.
+Privacy-first credit card decision engine built as a Chrome extension (WXT + React).
 
-The goal is to recommend the best credit card to use on a given website.
+PointIQ recommends the best credit card to use on a given website — without syncing financial data or tracking spending.
 
-## Current Status
+---
 
-- UI-only prototype
-- No authentication flow yet
-- Recommendation logic is in progress
+## 📦 Version
 
-## Prerequisites
+Current version: **0.11.0**
 
-- Node.js 18+ (Node.js 20+ recommended)
+---
+
+## 🚀 Implemented
+
+- Wallet view
+- CardItem component abstraction
+- Icon component separation
+- Tab-based layout (Wallet / Smart Pick)
+- Typed components (TypeScript)
+- Clean feature-based architecture
+
+---
+
+## 🛠 In Progress
+
+- State-driven wallet
+- Local persistence (chrome.storage)
+- Add / Remove cards
+- SmartPick recommendation engine
+
+---
+
+## 📊 Current Status
+
+- UI prototype
+- No authentication
+- Recommendation logic in development
+- No backend dependency
+
+---
+
+## 🧪 Local Development
+
+### Prerequisites
+
+- Node.js 18+ (20+ recommended)
 - npm
 - Google Chrome
 
-## Setup
-
-1. Install dependencies:
+### Setup
 
 ```bash
 npm install
-```
-
-2. Update WXT to the latest version:
-
-```bash
-npm install -D wxt@latest @wxt-dev/module-react@latest
-```
-
-3. Start development mode:
-
-```bash
 npm run dev
-```
-
-This launches a Chrome development session for testing the extension.
-
-## Useful Scripts
-
-- `npm run dev`: Start WXT dev mode (Chrome)
-- `npm run dev:firefox`: Start WXT dev mode (Firefox)
-- `npm run build`: Build extension for production
-- `npm run zip`: Create a distributable zip
