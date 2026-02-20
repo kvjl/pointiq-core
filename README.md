@@ -41,16 +41,16 @@ Current version: **0.11.0**
 
 ---
 
-## 🧪 Local Development
+## 🧪 Setup
 
-### Prerequisites
+This project is built with **WXT (Web Extension Toolkit)**, React, and TypeScript.
 
-- Node.js 18+ (20+ recommended)
-- npm
-- Google Chrome
+All required dependencies — including WXT — are installed via `npm`.
 
-### Setup
+### Install & Run
 
 ```bash
 npm install
 npm run dev
+
+Running npm run dev launches WXT in development mode and opens a fresh Chrome instance with the extension loaded.
