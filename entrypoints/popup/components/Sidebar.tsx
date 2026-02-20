@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckIcon } from "./icons/CheckIcon";
-import { WalletIcon } from "./icons/walleticon";
+import { WalletIcon } from "./icons/WalletIcon";
 
 type SidebarProps = {
   tab: string;

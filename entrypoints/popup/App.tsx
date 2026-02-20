@@ -3,6 +3,7 @@ import "./App.css";
 import CardList from "./components/CardList";
 import { Sidebar } from "./components/Sidebar";
 import SmartPickView from "./components/SmartPickView";
+import WalletView from "./components/WalletView";
 
 const TABS = { WALLET: "wallet", CHECK: "check" };
 
@@ -12,11 +13,10 @@ export default function App() {
   return (
     <div className="flex">
       <Sidebar tab={tab} onSelect={setTab} />
-      <main className="relative flex-col items-center p-4 w-full">
+      <main className="relative items-center p-4 w-full">
         {tab === TABS.WALLET ? (
           <>
-            <CardList />
-            <AddCardButton />
+            <WalletView />
           </>
         ) : (
           <SmartPickView />
